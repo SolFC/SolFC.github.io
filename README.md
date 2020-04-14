@@ -1,6 +1,6 @@
 ## Welcome to GitHub Pages
+<FONT FACE="arial">You can use the [editor on GitHub](https://github.com/SolFC/SolFC.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.</FONT>
 
-You can use the [editor on GitHub](https://github.com/SolFC/SolFC.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
