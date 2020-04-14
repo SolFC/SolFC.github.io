@@ -1,37 +1,26 @@
-## Welcome to GitHub Pages
+Maps
+====
 
-<FONT FACE="courier" SIZE="3">You can use the editor on GitHub to maintain and preview the content for your website in Markdown files.</FONT>
+Repository for all spatial data.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+For details go to our project site at [http://projects.datameet.org/maps/](http://projects.datameet.org/maps/)
 
-### Markdown
+----
+### Note on Format ###
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+This Repository contains Geospatial Data in [Shapefile Format](https://en.wikipedia.org/wiki/Shapefile), which is the defacto format for most GIS software.
 
-```markdown
-Syntax highlighted code block
+In case you want this data in GeoJSON or KML, or any one of the myrid Vector formats, you could use Gdal's [ogr2ogr](http://www.gdal.org/ogr2ogr.html) tool to convert these shapefiles to your prefered format. This can be done by the following commands:
 
-# Header 1
-## Header 2
-### Header 3
+`ogr2ogr -f GeoJSON <output name>.geojson <input name>.shp` &
 
-- Bulleted
-- List
+`ogr2ogr -f KML <output name>.kml <input name>.shp`  &
 
-1. Numbered
-2. List
+`ogr2ogr -f LIBKML <output name>.kmz <input name>.shp`  
 
-**Bold** and _Italic_ and `Code` text
+If you wish to convert these fiels using an Online too, you could look at: [MapSharper](http://www.mapshaper.org/); Do remeber to Zip up all the Files (*.shp, *.dbf, *.shx, *.prj) and import that into MapSharper. That way, you will get all attributes in the converted file.
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+**License**
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your...
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Unless otherwise states, this dataset is shared under [Creative Commons Attribution-ShareAlike 2.5 India](http://creativecommons.org/licenses/by-sa/2.5/in/) license.
